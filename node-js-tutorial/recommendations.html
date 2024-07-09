@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            recommendations
+        </title>
+
+    </head>
+
+    <body>
+        <form action="/getRecommendations" method="get" target="_self">
+            
+            <span>
+                seed track <input name="seed_tracks" type="text">
+                <br>
+            </span>
+            <span id="clone-me">
+                seed track <input name="seed_tracks" type="text">
+                <button type="button" class="remove">remove</button>
+                <br>
+            </span>
+            <span id="add-button">
+                <button type="button" class="add">add</button>
+                <br>
+            </span>
+
+
+            min popularity <input name="min_popularity" type="range" min="1" max="100" value="50">
+            max popularity <input name="max_popularity" type="range" min="1" max="100" value="50">
+
+            <input type="submit">
+        </form>
+
+    </body>
+</html>
